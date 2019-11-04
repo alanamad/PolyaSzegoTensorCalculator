@@ -345,6 +345,7 @@ for nsteps = 0:nRefinament
     disp('----------------');
 end
 
-PStensor =m;
+PStensor.tensor =m;
+PStensor.tensorSymmetrised =(m + m')/2;
 
 end
